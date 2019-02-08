@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="text03.02.19.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div id="page-banner">
+            <h1 class="title">Bookorama</h1>
+            <form id="search-books">
+                <input type="text" placeholder="Search books..." />
+            </form>
+        </div>
+    </header>
+    <div id="book-list">
+        <h2 class="title">Books to Read</h2>
+        <ul>
+            <li>
+                <span class="name">Name of the Wind</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="name">The Wise Man's Fear</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="name">Kafka on the Shore</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="name">The Master and the Margarita</span>
+                <span class="delete">delete</span>
+            </li>
+        </ul>
+    </div>
+    <form id="add-book">
+        <input type="checkbox" id="hide">
+        <label for="hide">Hide all the books Bro</label>
+        <input type="text" class="justwentlazy" placeholder="Add a book..." />
+        <button class="ji"   >Add</button>
+
+    </form>
+
+    <div id="tabbed-content">
+        <ul class="tabs">
+            <li data-target="#about" class="active">About</li>
+            <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+            <p>Content for about tab...</p>
+            <p> name can be anythink <br>Using data-name="#or.whatEverNameIwant" im making dependence betven element1, which gets gata-name="" atribute and element2, which have an # or . same as "whatEverNameIwant"
+                <br>
+            so, if ill type element1.dataset.name ill get an element2!!! and ofc i can do with it what ever i want
+            </p>
+        </div>
+        <div class="panel" id="contact" >
+            <p>Content for contact <tab class="."></tab>.</p>
+            <p> name - любое значение <br> Атрибут data-name="имя класса или айдишник" вешается на элемент, и связывает этот элемент и элменет с таким же айдишником или именем класса, таким образом, что
+                <br> при вызове элемент(на который я повесил data-).dataset.name я получаю доступ ко второму элементу(с совпадающим id или className) и могу его читать\писать.</p>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
+<script src="text03.02.19.js">
+
+
+
+</script>
