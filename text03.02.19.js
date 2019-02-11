@@ -63,8 +63,7 @@ console.log(searchValue);
  tabs.addEventListener('click', function (e) {
      if (e.target.tagName.toLowerCase() == 'li'){
          const targetPanel = document.querySelector(e.target.dataset.target); // Это есть элемент с id="about";
-         console.log('lalal');
-         console.log(targetPanel);
+              console.log(targetPanel);
           panels.forEach(function (panel) {
               if (targetPanel == panel){
                   panel.classList.add('active')
